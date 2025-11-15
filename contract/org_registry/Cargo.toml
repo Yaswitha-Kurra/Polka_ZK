@@ -1,0 +1,28 @@
+[package]
+name = "org_registry"
+version = "5.0.0"
+authors = ["Polkadot ZK Access"]
+edition = "2021"
+
+[lib]
+name = "org_registry"
+path = "lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+ink = { version = "5.0.0", default-features = false }
+scale = { package = "parity-scale-codec", version = "3", default-features = false, features = ["derive"] }
+scale-info = { version = "2", default-features = false, features = ["derive"] }
+
+[dev-dependencies]
+ink_e2e = "5.0.0"
+
+[features]
+default = ["std"]
+std = [
+    "ink/std",
+    "scale/std",
+    "scale-info/std",
+]
+ink-as-dependency = []
+

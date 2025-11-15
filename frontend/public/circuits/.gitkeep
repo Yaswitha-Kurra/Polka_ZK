@@ -1,0 +1,5 @@
+# Circuit files should be placed here
+# Copy from zk/circuits/ after compilation:
+# - merkle_membership.wasm
+# - proving_key.zkey
+

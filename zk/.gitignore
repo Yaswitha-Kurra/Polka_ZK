@@ -1,0 +1,9 @@
+node_modules/
+*.zkey
+*.r1cs
+*.wasm
+*.sym
+merkle/*.json
+circuits/proving_key.zkey
+circuits/verification_key.json
+
